@@ -5,5 +5,5 @@
     Modulo para teste
 
 """
-name = "base_utils"
+name = "utils"
 # import utils

@@ -1,5 +1,6 @@
-def value_teste(a):
-    return a*2
+from pyspark.sql.functions import col
 
-def print_value(x):
-    print("\n\nO valor para imprimir é {}".format(x))
+
+def xpto(df, column):
+    new_df = df.withColumn(column + "n_ew", col(column) + 1)
+    return new_df
